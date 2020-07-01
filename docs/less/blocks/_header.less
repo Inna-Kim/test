@@ -1,0 +1,229 @@
+.header {
+    padding-top: 20px;
+    position: relative;
+    height: 900px;
+    background-color:#9e9c93;
+    color:#fff;
+     
+    background-image: url(./../../docs/img/header/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+    &:before{
+        content: "";
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 15px;
+       
+        background-image: url(./../../docs/img/header/dashed-line.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.header-nav {
+    margin-bottom: 258px;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.header-logo a {
+    display: inline-block;
+    font-size: 30px;
+    font-family: "Scriptina";
+    color: rgb(255, 255, 255);
+    line-height: 0.8;
+    letter-spacing: 9px;
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+.header-menu {
+    padding-left: 36px;
+ }
+
+
+.header-menu_link {
+    display: inline-block;
+    position: relative;
+    margin-right:77px;
+    font-size: 14px;
+    font-family:"Alegreya",sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.7;
+    letter-spacing: 4.2px;
+    transition:.5s;
+
+    &:last-child{
+        padding-right: 0;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        border-bottom: 2px solid #fff ;
+        transition: .5s;
+        width: 0;
+    }
+
+    &:hover::before{
+        border-bottom: 2px solid #fff ;
+        transition: .5s;
+        width: 100%;
+    }
+}    
+
+.welcome{
+    position: relative;
+
+    &::after{
+        content: "~";
+        font-weight: 700;
+        position: absolute;
+        top: 0px;
+        left: 123px;
+        color:#fff;
+    }
+}
+
+.menu{
+    position: relative;
+    &::after{
+        content: "~";
+        font-weight: 700;
+        position: absolute;
+        top: 0px;
+        left: 88px;
+        color:#fff;
+    }
+}
+
+.reserv {
+    position: relative;
+    &::after{
+        content: "~";
+        font-weight: 700;
+        position: absolute;
+        top: 0px;
+        left: 179px;
+        color:#fff;
+    }
+}
+
+.news {
+    position: relative;
+    &::after{
+        content: "~";
+        font-weight: 700;
+        position: absolute;
+        top: 0px;
+        left: 90px;
+        color:#fff;
+    }
+}
+
+
+.header-icons {
+}
+
+
+.header-icons_item{
+    margin-right: 26px;
+    color: #fff;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+
+.fab {
+    font-weight: 400;
+    font-size: 15px;
+    transition: .5s;
+    &:hover{
+        transform: scale(1.3);
+    }
+}
+
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .title1{
+    margin-bottom: 170px;
+    position: relative;
+    font-size: 92px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    line-height: 0.26;
+    letter-spacing: 6.9px;
+    text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.004);
+}
+
+  .content-text p{
+    margin-bottom: 65px;
+    width: 560px;
+    font-size: 24px;
+    font-family: "ProximaNovaRegular";
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+.our-menu button{
+    padding: 10px 50px;
+    background-color: rgba(86, 83, 76, 0.53);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 700;
+    line-height: 1.7;
+    color: #fff;
+    letter-spacing: 4.2px;  
+    border: 2px dashed  rgb(158, 156, 147);
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover{
+        background-color: rgba(86, 83, 76, 0.73);
+    }
+}
+  
+
+   
