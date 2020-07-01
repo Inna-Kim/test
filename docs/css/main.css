@@ -115,9 +115,7 @@ button {
   height: 900px;
   background-color: #9e9c93;
   color: #fff;
-  background-image: url(../../docs/img/header/header-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../../img/header/header-bg.jpg);
   -moz-background-size: cover;
        background-size: cover;
   overflow: hidden;
